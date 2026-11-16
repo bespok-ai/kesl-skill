@@ -46,5 +46,7 @@ tasks it writes a Kesl runbook instead.
 
 ## Versions
 
+An installed skill doesn't update itself. To update, install it again the same way; in ChatGPT, sending the install message again replaces your copy with the newest version.
+
 Each release is tagged `vX.Y.Z`, and the version is in `SKILL.md` (`metadata.version`). What
 changed in each one: [CHANGELOG.md](CHANGELOG.md).
