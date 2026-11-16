@@ -8,7 +8,7 @@ text changed but this file didn't get a new version. Versions follow semver:
 - **minor**: something new the skill can write (a field, a kind of task);
 - **patch**: wording, examples or fixes that don't change what a runbook can contain.
 
-Published copies: github.com/bcoughlin/kesl-skill (tagged `vX.Y.Z`, with kesl.zip on each
+Published copies: github.com/bespok-ai/kesl-skill (tagged `vX.Y.Z`, with kesl.zip on each
 release) and kesl.ai/skill.
 
 ## [1.2.0] - 2026-11-16

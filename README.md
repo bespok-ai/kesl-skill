@@ -13,19 +13,19 @@ ChatGPT and any agent that reads skills. Install page: [kesl.ai/skill](https://k
 **Claude Code:**
 
 ```
-/plugin install kesl --marketplace bcoughlin/kesl-skill
+/plugin install kesl --marketplace bespok-ai/kesl-skill
 ```
 
 **Claude (claude.ai and the desktop app):** under **Customize › Plugins**, choose **Add
-marketplace** and paste `bcoughlin/kesl-skill`, then install Kesl. If you don't see that,
-download `kesl.zip` from the [latest release](https://github.com/bcoughlin/kesl-skill/releases/latest)
+marketplace** and paste `bespok-ai/kesl-skill`, then install Kesl. If you don't see that,
+download `kesl.zip` from the [latest release](https://github.com/bespok-ai/kesl-skill/releases/latest)
 and upload it under **Customize › Skills**. Type `/kesl` to use it.
 
 **ChatGPT (Work, web or desktop):** start a new session and send:
 
 ```
 Help me install the following skill into my personal ChatGPT skill directory:
-https://github.com/bcoughlin/kesl-skill/tree/main/skills/kesl
+https://github.com/bespok-ai/kesl-skill/tree/main/skills/kesl
 ```
 
 Or upload `kesl.zip` under **Settings › Plugins › Skills**. Type `@kesl` to use it. The web
@@ -34,7 +34,7 @@ and desktop apps keep separate skill lists.
 **Coding agents** (Claude Code, Codex, Cursor and others):
 
 ```
-npx skills add bcoughlin/kesl-skill
+npx skills add bespok-ai/kesl-skill
 ```
 
 ## Then
