@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kesl",
+  "version": "1.2.0",
+  "description": "Have Kesl, the browser agent on your iPhone, do something on the web for you: check a flight, look something up on a live site, fill in a form, book or order. Your AI hands Kesl the task as one Open in Kesl link.",
+  "author": {
+    "name": "Kesl",
+    "url": "https://kesl.ai"
+  },
+  "homepage": "https://kesl.ai/skill",
+  "repository": "https://github.com/bcoughlin/kesl-skill",
+  "keywords": [
+    "browser",
+    "iphone",
+    "agent",
+    "tasks"
+  ],
+  "extensions": {
+    "com.openai.interface": {
+      "displayName": "Kesl",
+      "shortDescription": "Have Kesl do it on your iPhone",
+      "developerName": "Kesl",
+      "defaultPrompt": "Have Kesl check my flight"
+    }
+  }
+}

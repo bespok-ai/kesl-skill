@@ -1,0 +1,15 @@
+{
+  "name": "kesl-skill",
+  "description": "The Kesl skill: have Kesl do something on your iPhone",
+  "owner": {
+    "name": "Kesl",
+    "url": "https://kesl.ai"
+  },
+  "plugins": [
+    {
+      "name": "kesl",
+      "source": "./",
+      "description": "Have Kesl, the browser agent on your iPhone, do something on the web for you: check a flight, look something up on a live site, fill in a form, book or order. Your AI hands Kesl the task as one Open in Kesl link."
+    }
+  ]
+}

@@ -10,8 +10,16 @@ ChatGPT and any agent that reads skills. Install page: [kesl.ai/skill](https://k
 
 ## Install
 
-**Claude:** download `kesl.zip` from the [latest release](https://github.com/bcoughlin/kesl-skill/releases/latest),
-then in claude.ai open **Customize › Skills** and upload it. Type `/kesl` to use it.
+**Claude Code:**
+
+```
+/plugin install kesl --marketplace bcoughlin/kesl-skill
+```
+
+**Claude (claude.ai and the desktop app):** under **Customize › Plugins**, choose **Add
+marketplace** and paste `bcoughlin/kesl-skill`, then install Kesl. If you don't see that,
+download `kesl.zip` from the [latest release](https://github.com/bcoughlin/kesl-skill/releases/latest)
+and upload it under **Customize › Skills**. Type `/kesl` to use it.
 
 **ChatGPT (Work, web or desktop):** start a new session and send:
 
