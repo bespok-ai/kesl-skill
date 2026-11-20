@@ -8,8 +8,35 @@ text changed but this file didn't get a new version. Versions follow semver:
 - **minor**: something new the skill can write (a field, a kind of task);
 - **patch**: wording, examples or fixes that don't change what a runbook can contain.
 
-Published copies: github.com/bespok-ai/kesl-skill (tagged `vX.Y.Z`, with kesl.zip on each
+Published copies: github.com/kesl-ai/kesl-skill (tagged `vX.Y.Z`, with kesl-run.zip on each
 release) and kesl.ai/skill.
+
+## [1.2.1] - 2026-11-19
+
+The skill now reads kesl.ai/run every time instead of carrying its own instructions. Brad:
+"All I really want the skill to do is not make me have to repeat kesl.ai/run, but it should
+also go and look at kesl.ai/run every time someone mentions it. So basically the skill is just
+basically awareness to use Kesl."
+
+- First step: open https://kesl.ai/run.md and follow it. A change to kesl.ai/run now reaches
+  everyone who installed the skill, with no reinstall.
+- The old instructions stay below as a fallback copy, used only when the page can't be opened.
+- Also fires when the user mentions kesl.ai/run.
+- Renamed `kesl-run`: type `/kesl-run` in Claude or `@kesl-run` in ChatGPT, and the download is
+  `kesl-run.zip`. Brad: "just /kesl probably isn't descriptive enough. Maybe like /kesl-run
+  would be nicer." It matches kesl.ai/run, the page the skill reads.
+- kesl.ai/run (and so the fallback copy) now says to use the Kesl connector's tools when the AI
+  has them, and the Open in Kesl link only when it doesn't. Brad agreed the rule belongs on
+  kesl.ai/run, not in the skill, so it reaches everyone without a reinstall.
+- kesl.ai/run now has its own version (run/CHANGELOG.md). The fallback copy says which
+  version it is, and the skill's version changes only when the skill's own wording does, not
+  when kesl.ai/run changes.
+- Gets the whole page, not a summary: `curl -sL https://kesl.ai/run.md` where the AI can run a
+  shell command, since Claude Code's web fetch returns only a summary of it; with only a
+  summary, exact formats come from the bundled copy. Brad: "Normally we paste kesl.ai/run.md
+  directly... that always works so that it gets the full context."
+- The public repo moved to github.com/kesl-ai/kesl-skill (the old bespok-ai address redirects).
+- Requests, runbooks and links are unchanged.
 
 ## [1.2.0] - 2026-11-16
 
